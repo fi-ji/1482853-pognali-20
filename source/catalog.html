@@ -611,29 +611,25 @@
             <button class="users-filter__toggle" type="button">Транспорт
               <span class="users-filter__colon">:</span></button>
 
-            <ul class="users-filter__list">
-              <li class="users-filter__item">
-                <input class="visually-hidden users-filter__input users-filter__input--checkbox" type="checkbox"
-                  name="plane" id="plane-field" checked>
-                <label class="users-filter__label" for="plane-field"><span
-                    class="user-filter__txt">Авиаперелет</span></label>
+            <ul class="users-filter__list transport">
+              <li class="transport__item">
+                <input class="visually-hidden transport__checkbox" type="checkbox" name="plane" id="plane-field"
+                  checked>
+                <label class="transport__label" for="plane-field"><span
+                    class="transport__txt">Авиаперелет</span></label>
               </li>
-              <li class="users-filter__item">
-                <input class="visually-hidden users-filter__input users-filter__input--checkbox" type="checkbox"
-                  name="bus" id="bus-field" checked>
-                <label class="users-filter__label" for="bus-field"><span
-                    class="user-filter__txt">Автотранспорт</span></label>
+              <li class="transport__item">
+                <input class="visually-hidden transport__checkbox" type="checkbox" name="bus" id="bus-field" checked>
+                <label class="transport__label" for="bus-field"><span
+                    class="transport__txt">Автотранспорт</span></label>
               </li>
-              <li class="users-filter__item">
-                <input class="visually-hidden users-filter__input users-filter__input--checkbox" type="checkbox"
-                  name="bike" id="bike-field">
-                <label class="users-filter__label" for="bike-field"><span
-                    class="user-filter__txt">Велосипед</span></label>
+              <li class="transport__item">
+                <input class="visually-hidden transport__checkbox" type="checkbox" name="bike" id="bike-field">
+                <label class="transport__label" for="bike-field"><span class="transport__txt">Велосипед</span></label>
               </li>
-              <li class="users-filter__item">
-                <input class="visually-hidden users-filter__input users-filter__input--checkbox" type="checkbox"
-                  name="feet" id="feet-field" checked>
-                <label class="users-filter__label" for="feet-field"><span class="user-filter__txt">Пешком</span></label>
+              <li class="transport__item">
+                <input class="visually-hidden transport__checkbox" type="checkbox" name="feet" id="feet-field" checked>
+                <label class="transport__label" for="feet-field"><span class="transport__txt">Пешком</span></label>
               </li>
             </ul>
           </fieldset>
@@ -715,19 +711,18 @@
             <div class="user-card__transport-wrapper">
               <h4 class="user-card__flags-subtitle subtitle">Транспорт:</h4>
 
-              <ul class="user-card__transport-list">
-                <li
-                  class="user-card__transport-item user-card__transport-item--plane user-card__transport-item--active">
-                  <span class="user-card__transport-name">Авиаперелет</span>
+              <ul class="user-card__transport-list transport">
+                <li class="transport__item transport__item--plane transport__item--active">
+                  <span class="transport__name">Авиаперелет</span>
                 </li>
-                <li class="user-card__transport-item user-card__transport-item--bus">
-                  <span class="user-card__transport-name">Автотранспорт</span>
+                <li class="transport__item transport__item--bus">
+                  <span class="transport__name">Автотранспорт</span>
                 </li>
-                <li class="user-card__transport-item user-card__transport-item--bicycle">
-                  <span class="user-card__transport-name">Велосипед</span>
+                <li class="transport__item transport__item--bicycle">
+                  <span class="transport__name">Велосипед</span>
                 </li>
-                <li class="user-card__transport-item user-card__transport-item--foot">
-                  <span class="user-card__transport-name">Пешком</span>
+                <li class="transport__item transport__item--foot">
+                  <span class="transport__name">Пешком</span>
                 </li>
               </ul>
             </div>
@@ -788,19 +783,18 @@
             <div class="user-card__transport-wrapper">
               <h4 class="user-card__flags-subtitle subtitle">Транспорт:</h4>
 
-              <ul class="user-card__transport-list">
-                <li
-                  class="user-card__transport-item user-card__transport-item--plane user-card__transport-item--active">
-                  <span class="user-card__transport-name">Авиаперелет</span>
+              <ul class="user-card__transport-list transport">
+                <li class="transport__item transport__item--plane transport__item--active">
+                  <span class="transport__name">Авиаперелет</span>
                 </li>
-                <li class="user-card__transport-item user-card__transport-item--bus user-card__transport-item--active">
-                  <span class="user-card__transport-name">Автотранспорт</span>
+                <li class="transport__item transport__item--bus transport__item--active">
+                  <span class="transport__name">Автотранспорт</span>
                 </li>
-                <li class="user-card__transport-item user-card__transport-item--bicycle">
-                  <span class="user-card__transport-name">Велосипед</span>
+                <li class="transport__item transport__item--bicycle">
+                  <span class="transport__name">Велосипед</span>
                 </li>
-                <li class="user-card__transport-item user-card__transport-item--foot user-card__transport-item--active">
-                  <span class="user-card__transport-name">Пешком</span>
+                <li class="transport__item transport__item--foot transport__item--active">
+                  <span class="transport__name">Пешком</span>
                 </li>
               </ul>
             </div>
@@ -864,20 +858,18 @@
             <div class="user-card__transport-wrapper">
               <h4 class="user-card__flags-subtitle subtitle">Транспорт:</h4>
 
-              <ul class="user-card__transport-list">
-                <li
-                  class="user-card__transport-item user-card__transport-item--plane user-card__transport-item--active">
-                  <span class="user-card__transport-name">Авиаперелет</span>
+              <ul class="user-card__transport-list transport">
+                <li class="transport__item transport__item--plane transport__item--active">
+                  <span class="transport__name">Авиаперелет</span>
                 </li>
-                <li class="user-card__transport-item user-card__transport-item--bus">
-                  <span class="user-card__transport-name">Автотранспорт</span>
+                <li class="transport__item transport__item--bus">
+                  <span class="transport__name">Автотранспорт</span>
                 </li>
-                <li
-                  class="user-card__transport-item user-card__transport-item--bicycle user-card__transport-item--active">
-                  <span class="user-card__transport-name">Велосипед</span>
+                <li class="transport__item transport__item--bicycle transport__item--active">
+                  <span class="transport__name">Велосипед</span>
                 </li>
-                <li class="user-card__transport-item user-card__transport-item--foot">
-                  <span class="user-card__transport-name">Пешком</span>
+                <li class="transport__item transport__item--foot">
+                  <span class="transport__name">Пешком</span>
                 </li>
               </ul>
             </div>
@@ -940,19 +932,18 @@
             <div class="user-card__transport-wrapper">
               <h4 class="user-card__flags-subtitle subtitle">Транспорт:</h4>
 
-              <ul class="user-card__transport-list">
-                <li
-                  class="user-card__transport-item user-card__transport-item--plane user-card__transport-item--active">
-                  <span class="user-card__transport-name">Авиаперелет</span>
+              <ul class="user-card__transport-list transport">
+                <li class="transport__item transport__item--plane transport__item--active">
+                  <span class="transport__name">Авиаперелет</span>
                 </li>
-                <li class="user-card__transport-item user-card__transport-item--bus user-card__transport-item--active">
-                  <span class="user-card__transport-name">Автотранспорт</span>
+                <li class="transport__item transport__item--bus transport__item--active">
+                  <span class="transport__name">Автотранспорт</span>
                 </li>
-                <li class="user-card__transport-item user-card__transport-item--bicycle">
-                  <span class="user-card__transport-name">Велосипед</span>
+                <li class="transport__item transport__item--bicycle">
+                  <span class="transport__name">Велосипед</span>
                 </li>
-                <li class="user-card__transport-item user-card__transport-item--foot">
-                  <span class="user-card__transport-name">Пешком</span>
+                <li class="transport__item transport__item--foot">
+                  <span class="transport__name">Пешком</span>
                 </li>
               </ul>
             </div>

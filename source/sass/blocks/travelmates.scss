@@ -1,0 +1,40 @@
+.travelmates {
+  background-color: $color-primary;
+  color: $color-contrast;
+
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+
+  @media (min-width: $tablet-width) {
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-bottom-left-radius: 56px;
+    border-bottom-right-radius: 56px;
+  }
+}
+
+.travelmates__txt {
+  font-weight: 300;
+}
+
+.travelmates__note {
+  font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    @include font-prop(21px, 24px);
+  }
+}
+
+.travelmates__list {
+  @include list-reset();
+}
+
+.travelmates__link {
+  @media (min-width: $desktop-width) {
+    width: auto;
+    min-width: 280px;
+  }
+}

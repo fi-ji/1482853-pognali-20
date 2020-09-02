@@ -1,0 +1,32 @@
+.directions {
+  background-color: $color-primary-light;
+
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+
+  @media (min-width: $tablet-width) {
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-bottom-left-radius: 56px;
+    border-bottom-right-radius: 56px;
+  }
+}
+
+.directions__txt {
+  color: $color-small-txt;
+  font-weight: 300;
+}
+
+.directions__list {
+  @include list-reset();
+}
+
+.directions__link {
+  @media (min-width: $desktop-width) {
+    width: auto;
+    min-width: 275px;
+  }
+}

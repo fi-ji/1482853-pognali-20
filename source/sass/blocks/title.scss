@@ -1,0 +1,9 @@
+.title {
+  color: $color-secondary-txt;
+
+  @include font-prop(24px, 24px);
+
+  @media (min-width: $tablet-width) {
+    @include font-prop(45px, 45px);
+  }
+}

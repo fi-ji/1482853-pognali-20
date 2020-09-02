@@ -1,0 +1,34 @@
+.button {
+  background-color: $color-secondary;
+  color: $color-lg-txt;
+
+  font-weight: 700;
+
+  display: inline-flex;
+
+  width: 100%;
+  border-radius: 10px;
+  padding-top: 23px;
+  padding-bottom: 22px;
+  padding-left: 23px;
+
+  @include font-prop(18px, 18px);
+
+  &:hover,
+  &:focus {
+    background-color: $color-secondary-dark;
+  }
+
+  &:active {
+    color: rgba($color-lg-txt, 0.3%);
+  }
+
+  @media (min-width: $tablet-width) {
+    border-radius: 20px;
+    padding-top: 29px;
+    padding-bottom: 27px;
+    padding-left: 33px;
+
+    @include font-prop(24px, 24px);
+  }
+}

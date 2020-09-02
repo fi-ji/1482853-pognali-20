@@ -1,0 +1,145 @@
+.feedback {
+  background-color: $color-primary;
+  color: $color-contrast;
+  font-weight: 300;
+  text-align: center;
+
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+
+  @media (min-width: $tablet-width) {
+    line-height: 32px;
+
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-bottom-left-radius: 56px;
+    border-bottom-right-radius: 56px;
+  }
+}
+
+.feedback__txt-link {
+  color: $color-secondary;
+  text-decoration: underline;
+
+  &:hover,
+  &:focus {
+    color: $color-secondary-txt;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.feedback__note {
+  @media (min-width: $tablet-width) {
+    line-height: 30px;
+    letter-spacing: 0.01em;
+  }
+}
+
+.feedback__form {
+  text-align: start;
+
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.feedback_email {
+  color: $color-primary;
+  font-family: $blogger;
+  font-weight: 700;
+
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-left: 21px;
+  border: 4px solid transparent;
+  outline: none;
+
+  @include font-prop(18px, 18px);
+
+  &::placeholder {
+    color: $color-small-txt;
+    opacity: 0.3;
+  }
+
+  &:hover {
+    background-color: $color-primary-light;
+
+    &::placeholder {
+      opacity: 0.5;
+    }
+  }
+
+  &:focus {
+    background-color: transparent;
+    color: $color-contrast;
+    border: 4px solid $color-contrast;
+
+    &::placeholder {
+      color: $color-contrast;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 28px;
+    padding-bottom: 28px;
+    padding-left: 32px;
+
+    @include font-prop(24px, 24px);
+  }
+}
+
+.feedback__submit {
+  background-color: $color-secondary;
+  color: $color-lg-txt;
+  font-family: $blogger;
+  font-weight: bold;
+
+  height: 62px;
+  padding: 0;
+  border: 0;
+  border-radius: 20px;
+
+  &:hover,
+  &:focus {
+    background-color: $color-secondary-dark;
+  }
+
+  &:active {
+    color: rgba($color-lg-txt, 0.3%);
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 80px;
+  }
+}
+
+.feedback__list {
+  text-align: start;
+
+  @include list-reset();
+}
+
+.feedback__link {
+  color: $color-secondary;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    color: $color-secondary-dark;
+  }
+
+  &:active {
+    color: rgba($color-secondary, 0.3%);
+  }
+
+  @media (min-width: $tablet-width) {
+    line-height: 28px;
+  }
+}

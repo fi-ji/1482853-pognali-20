@@ -1,0 +1,21 @@
+.page {
+  height: 100%;
+}
+
+.page__body {
+  font-family: $blogger;
+
+  @include font-prop (16px, 22px);
+
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    @include font-prop(28px, 33px);
+  }
+}

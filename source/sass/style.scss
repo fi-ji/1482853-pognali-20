@@ -1,1 +1,39 @@
-// Начните писать стили здесь
+//Normalize.scss
+
+@import "../../node_modules/normalize-scss/sass/normalize";
+@include normalize();
+
+//Global
+
+@import "fonts.scss";
+@import "variables.scss";
+@import "mixins.scss";
+@import "scaffolding.scss";
+
+//Blocks
+// Common blocks
+
+@import "blocks/page.scss";
+@import "blocks/header.scss";
+@import "blocks/site-list.scss";
+@import "blocks/contacts-list";
+@import "blocks/social.scss";
+@import "blocks/main-title.scss";
+@import "blocks/button.scss";
+@import "blocks/transport.scss";
+@import "blocks/footer.scss";
+
+// Index
+
+@import "blocks/promo.scss";
+@import "blocks/about.scss";
+@import "blocks/title.scss";
+@import "blocks/directions.scss";
+@import "blocks/country.scss";
+@import "blocks/travelmates.scss";
+@import "blocks/profile.scss";
+@import "blocks/rates.scss";
+@import "blocks/regular-rates.scss";
+@import "blocks/business-rates.scss";
+@import "blocks/feedback.scss";
+@import "blocks/location.scss";

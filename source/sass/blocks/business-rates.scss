@@ -1,0 +1,53 @@
+.business-rates {
+  background-color: $color-contrast;
+}
+
+.busines-service__table {
+  color: $color-small-txt;
+  font-weight: 300;
+
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    @include font-prop(22px, 28px);
+  }
+}
+
+.business-rates__price {
+  margin: 0;
+}
+
+.business-rates__wrapper {
+  border-top: 1px solid #000000;
+  border-top-color: rgba(#000000, 0.05%);
+
+  &:last-child {
+    border-bottom: 1px solid #000000;
+    border-bottom-color: rgba(#000000, 0.05%);
+  }
+}
+
+.business-rates__close-button {
+  background-color: #f3f4f8;
+  color: $color-lg-txt;
+  font-family: $blogger;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
+
+  width: 100%;
+  border: 0;
+  padding: 0;
+  padding-top: 21px;
+  padding-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    text-transform: initial;
+
+    padding-top: 41px;
+    padding-bottom: 41px;
+
+    @include font-prop(24px, 24px);
+  }
+}

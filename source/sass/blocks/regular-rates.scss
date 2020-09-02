@@ -1,0 +1,21 @@
+.regular-rates {
+  font-weight: 300;
+  line-height: 16px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    line-height: 28px;
+  }
+}
+
+.regular-rates__price {
+  margin: 0;
+}
+
+.regular-rates__wrapper {
+  border-top: 1px solid #e1e3e9;
+
+  &:last-child {
+    border-bottom: 1px solid #e1e3e9;
+  }
+}

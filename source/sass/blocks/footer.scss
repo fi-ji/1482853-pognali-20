@@ -1,0 +1,29 @@
+.footer {
+  background-color: $color-contrast;
+
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+
+  @media (min-width: $tablet-width) {
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-top-left-radius: 56px;
+    border-top-right-radius: 56px;
+  }
+}
+
+.footer__copyright {
+  color: $color-small-txt;
+
+  &:hover,
+  &:focus-within {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

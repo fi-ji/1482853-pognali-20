@@ -1,0 +1,48 @@
+.location__txt-wrapper {
+  background-color: $color-secondary;
+  color: $color-lg-txt;
+  font-weight: 700;
+
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+
+  @media (min-width: $tablet-width) {
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-bottom-left-radius: 56px;
+    border-bottom-right-radius: 56px;
+  }
+}
+
+.location__address {
+  font-style: normal;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    line-height: 28px;
+  }
+}
+
+.location__link {
+  border: 3px solid #192144;
+
+  &:hover,
+  &:focus {
+    background-color: #192144;
+    color: $color-contrast;
+  }
+
+  &:active {
+    color: rgba($color-contrast, 0.3%);
+  }
+}
+
+.location__img-wrapper {
+  width: 320px;
+  height: 424px;
+  margin: 0 auto;
+  overflow: hidden;
+}

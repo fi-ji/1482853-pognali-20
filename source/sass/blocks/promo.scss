@@ -1,0 +1,60 @@
+.promo {
+  background-color: $color-primary;
+  color: $color-contrast;
+}
+
+.promo__title {
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+  }
+}
+
+.promo__review-text {
+  font-weight: 300;
+}
+
+.promo__review-author {
+  font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    @include font-prop(21px, 25px);
+  }
+}
+
+.promo__list {
+  color: $color-primary;
+  font-weight: 700;
+
+  @include font-prop(18px, 18px);
+  @include list-reset();
+}
+
+.promo__item {
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-left: 24px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+  &:last-child {
+    border-radius: 10px;
+  }
+
+  &:nth-child(4n+1) {
+    background-color: $color-secondary-txt;
+  }
+
+  &:nth-child(4n+2) {
+    background-color: #ffa530;
+  }
+
+  &:nth-child(4n+3) {
+    background-color: $color-secondary-dark;
+  }
+
+  &:nth-child(4n+4) {
+    background-color: $color-secondary;
+  }
+}

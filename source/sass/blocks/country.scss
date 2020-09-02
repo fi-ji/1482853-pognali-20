@@ -1,0 +1,55 @@
+.country {
+  border-radius: 10px;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 20px;
+  }
+}
+
+.country__img-link {
+  display: inline-flex;
+}
+
+.country__img {
+  display: block;
+}
+
+.country__content-wrapper {
+  background-color: $color-contrast;
+  border-radius: 10px;
+}
+
+.country__link {
+  color: #000000;
+  font-weight: 700;
+
+  @include font-prop(21px, 21px);
+
+  @media (min-width: $tablet-width) {
+    @include font-prop(24px, 24px);
+  }
+}
+
+.country__users {
+  color: $color-primary;
+  font-weight: 500;
+  line-height: 20px;
+
+  opacity: 0.3;
+
+  @media (min-width: $tablet-width) {
+    @include font-prop(20px, 20px);
+  }
+}
+
+.country__tagline {
+  color: rgba($color-small-txt, 0.3%);
+  font-weight: 500;
+  line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    @include font-prop(20px, 20px);
+  }
+}
+

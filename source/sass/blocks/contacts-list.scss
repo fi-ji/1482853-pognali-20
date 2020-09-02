@@ -1,0 +1,49 @@
+.contacts-list {
+  @include list-reset();
+
+  .contacts-list__link {
+    font-weight: 700;
+
+    display: inline-flex;
+
+    @include font-prop(16px, 18px);
+
+    &:hover,
+    &:focus {
+      color: $color-secondary;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+
+    @media (min-width: $tablet-width) {
+      @include font-prop(28px, 28px);
+    }
+
+    &--auth {
+      background-color: $color-secondary;
+      color: $color-primary;
+
+      padding: 12px 81px 8px 78px;
+      border-radius: 25px;
+
+      @include font-prop(17px, 30px);
+
+      &:hover,
+      &:focus {
+        background-color: $color-secondary-dark;
+        color: $color-primary;
+      }
+
+      &:active {
+        color: rgba($color-primary, 0.3%);
+      }
+
+      @media (min-width: $tablet-width) {
+        @include font-prop(20px, 20px);
+      }
+    }
+  }
+}
+

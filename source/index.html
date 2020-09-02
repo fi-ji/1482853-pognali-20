@@ -5,9 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Погнали</title>
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body class="page__body">
+<body class="page__body page__body--index">
   <svg style="display: none;">
     <!-- <include src="source/img/sprite.svg"></include> -->
   </svg>
@@ -37,9 +38,11 @@
         </button>
 
         <ul class="header__list site-list">
-          <li class="site-list__item"><a class="site-list__link">О сервисе</a></li>
-          <li class="site-list__item"><a class="site-list__link" href="form.html">Направления</a></li>
-          <li class="site-list__item"><a class="site-list__link" href="catalog.html">Попутчики</a></li>
+          <li class="site-list__item"><a class="site-list__link" data-hover="О сервисе">О сервисе</a></li>
+          <li class="site-list__item"><a class="site-list__link" data-hover="Направления"
+              href="form.html">Направления</a></li>
+          <li class="site-list__item"><a class="site-list__link" data-hover="Попутчики"
+              href="catalog.html">Попутчики</a></li>
         </ul>
       </nav>
 
@@ -73,12 +76,12 @@
     <section class="promo">
       <div class="promo__wrapper container">
         <h1 class="promo__title main-title">В путешествие с крутыми попутчиками!</h1>
-        <blockquote class="promo__review review">
-          <p class="review__text">
+        <blockquote class="promo__review">
+          <p class="promo__review-text">
             «Лучшее приложение, что я видел в жизни!»
           </p>
-          <cite class="review__author">
-            Мурат Эльтазин<br>главный редактор газеты «гаджетлайф»
+          <cite class="promo__review-author">
+            Мурат Эльтазин главный редактор газеты «гаджетлайф»
           </cite>
         </blockquote>
         <ol class="promo__list">
@@ -106,6 +109,7 @@
 
     <section class="directions">
       <div class="directions__wrapper container">
+        <h2 class="directions__title title">Направления</h2>
         <p class="directions__txt">
           Мы не продаем туры и ничего не рекламируем.
           Люди сами пишут о странах, куда хотели бы отправиться
@@ -293,7 +297,7 @@
 
     <section class="rates">
       <div class="rates__wrapper container">
-        <h2 class="rates__title">Добавьте свой профиль</h2>
+        <h2 class="rates__title title">Добавьте свой профиль</h2>
 
         <dl class="rates__table regular-rates">
           <div class="regular-rates__wrapper">
@@ -366,12 +370,14 @@
     </section>
 
     <section class="location">
-      <div class="location__wrapper container">
-        <h2 class="visually-hidden">Наш адрес</h2>
-        <address class="location__adress">ул. Большая Конюшенная, 19/8</address>
-        <!-- нужен маршрут с местоположения пользователя -->
-        <a class="location__link button" href="https://yandex.ru/maps/-/CCQtvASi0C" target="_blank">Проложить
-          маршрут</a>
+      <div class="location__txt-wrapper">
+        <div class="location__wrapper container">
+          <h2 class="visually-hidden">Наш адрес</h2>
+          <address class="location__address">ул. Большая Конюшенная, 19/8</address>
+          <!-- нужен маршрут с местоположения пользователя -->
+          <a class="location__link button" href="https://yandex.ru/maps/-/CCQtvASi0C" target="_blank">Проложить
+            маршрут</a>
+        </div>
       </div>
 
       <div class="location__img-wrapper">
@@ -388,6 +394,7 @@
             alt="Карта c адресом офиса Погнали" width="320" height="424">
         </picture>
       </div>
+
       <div class="location__map-api" id="map"></div>
     </section>
   </main>
